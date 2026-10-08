@@ -1,0 +1,310 @@
+/*About Us*/
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333; /* Dark coffee color */
+    background-color: #f3ece7; /* Light cream color */
+    margin: 0;
+    padding: 0;
+    background-image: url('bg.png'); /* Subtle textured background */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 15px;
+  }
+  button {
+    padding: 20px 30px;
+  }
+}
+/* Page Title and Section Headers */
+
+/* Header */
+header {
+    background-color: white;
+    color: white;
+    padding: 15px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+.navbar h2{
+    display: flex;
+    align-items: center;
+    color: black;
+    margin-right: 1000px;
+}
+
+.navbar img{
+    display: flex;
+    max-width: 80px;
+    max-height: 80px; 
+    object-fit: cover; 
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    gap: 50px;
+}
+.point:hover{
+    color: #007bff;
+}
+.point a{
+    color:black;
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #e0d5c2; /* Creamy color for contrast */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #8b4513; /* Warm brown color */
+}
+
+/* Header Section */
+.header-section {
+    position: relative;
+    /*background-color: rgb(62, 47, 47);#3e2f2f;  Dark coffee background */
+    background: rgba(62, 47, 47 ,0.6);
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.header-section h1 {
+    font-size: 3em;
+    font-family: 'Georgia', serif;
+    margin-bottom: 10px;
+}
+
+.header-section h3 {  color: #f6f5f3; }
+.header-section .about-text {
+    font-size: 1em;
+    color:  #290e00; /* Light coffee color */
+    max-width: 600px;
+    margin: auto;
+    font-weight: bolder;
+}
+
+/* Accent Shape */
+.accent-shape {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #a67c52; /* Light coffee color */
+    clip-path: polygon(50% 0%, 80% 20%, 100% 50%, 80% 80%, 50% 100%, 20% 80%, 0% 50%, 20% 20%);
+    right: 10%;
+    top: 20%;
+    z-index: -1;
+}
+
+/* Highlighted Image */
+.highlighted-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+.highlighted-image-wrapper {
+    position: absolute;
+    right: 5%;
+    top: 35%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+/* Team Section */
+.team-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff; /* White background for contrast */
+    padding: 50px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    max-width: 1000px;
+}
+
+.team-image {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-right: 40px;
+}
+
+.team-description {
+    max-width: 500px;
+    color: #3e2f2f;
+    text-align: justify; /* Dark coffee color */
+}
+
+.team-description h2 {
+    font-size: 1.8em;
+    color: #6f4e37; /* Deep coffee brown */
+    margin-bottom: 10px;
+    font-family: 'Georgia', serif;
+}
+
+.team-description .highlight {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #a67c52; /* Light coffee color */
+    margin-bottom: 10px;
+}
+
+.team-description p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* Team Member Cards */
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.team-member {
+    background-color: #3e2f2f; /* Dark coffee color */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.team-member img:hover {
+    transform: scale(1.1);
+}
+
+.team-member strong {
+    font-size: 1.2em;
+    color: #f3ece7; /* Light cream color */
+    margin-top: 10px;
+    display: block;
+}
+
+.team-member p {
+    font-size: 0.9em;
+    color: #d3a87c; /* Coffee cream color */
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons i {
+    font-size: 1.5em;
+    margin: 0 10px;
+    color: #d3a87c; /* Coffee cream color */
+    transition: color 0.3s;
+}
+
+.social-icons i:hover {
+    color: #ff6600; /* Bright coffee orange on hover */
+}
+
+/* Separator Line */
+hr {
+    width: 90%;
+    margin: 20px auto;
+    border: 0;
+    border-top: 2px dashed #6f4e37; /* Deep coffee brown */
+    opacity: 0.5;
+}
+footer{
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    margin-top: 20px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer-column {
+    max-width: 200px;
+}
+
+.footer-column h4 {
+    font-size: 1.2em;
+    margin-bottom: 15px; 
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0; 
+}
+
+.footer-column ul li {
+    margin: 5px 0;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.3s; 
+}
+.footer-column i {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s; 
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+    color: #d9e7a5; 
+}
+.footer-column i:hover{
+    color: #007bff;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 0.8em;
+    border-top: 1px solid #444; 
+    padding-top: 10px; 
+}

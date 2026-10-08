@@ -1,0 +1,284 @@
+/*Menu*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 15px;
+    }
+    button {
+        padding: 20px 30px;
+    }
+}
+
+/* Header Styles */
+header {
+    background-color: transparent;
+    color: white;
+    padding: 15px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+.navbar h2 {
+    display: flex;
+    align-items: center;
+    color: black;
+    margin-right: 1000px;
+}
+
+.navbar img {
+    display: flex;
+    max-width: 80px;
+    max-height: 80px; 
+    object-fit: cover; 
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    gap: 50px;
+}
+.point a{
+    color:black;
+    text-decoration: none;
+}
+.point:hover {
+    color: #007bff;
+}
+
+/* Featured Section Styles */
+.featured {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.featured h1 {
+    font-size: 2em;
+    color: #006241;
+    margin-bottom: 10px;
+}
+
+.featured p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; 
+}
+
+/* Menu Items Grid */
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 10px; /* Keep a small gap between items */
+    justify-items: stretch; /* Make items stretch to fill the container width */
+    padding: 0 5px; /* Reduce padding on the sides to bring items closer to edges */
+}
+
+.menu-item {
+    background-color: #787878 rgb(120,120,120);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+    width: 100%;
+    position: relative; /* For positioning the pop-up description */
+    overflow: hidden; /* Prevent description overflow */
+}
+
+.highlight {
+    border: 3px solid #ffffff;
+    padding: 15px;
+}
+
+.menu-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.menu-item h2 {
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* Pop-up description effect */
+.menu-item p {
+    position: absolute;
+    bottom: -100%; /* Start below the visible area */
+    left: 0;
+    width: 100%;
+     background-color: rgba(111, 78, 55, 0.8);
+    color: white;
+    font-size: 0.9em;
+    padding: 10px;
+    text-align: center;
+    border-radius: 0 0 10px 10px; /* Match menu-item border radius */
+    transition: transform 0.3s ease-in-out, bottom 0.3s ease-in-out; /* Smooth transitions */
+    transform: translateY(100%); /* Hidden initially */
+}
+
+.menu-item:hover p {
+    bottom: 0; /* Move description into view */
+    transform: translateY(0); /* Slide description up */
+}
+
+.cta-button a, button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-items {
+        grid-template-columns: 1fr; /* Stacks items in a single column on smaller screens */
+        gap: 15px;
+        padding: 0 10px; /* Small padding on sides for mobile */
+    }
+}
+
+.menu-item:hover h2, .menu-item:hover p {
+    color: white;
+}
+
+/*hover for frappe*/
+.border1:hover {
+    border-color: black;
+    background-color: #D38445;
+}
+.border2:hover {
+    border-color: black;
+    background-color: #CCA37D;
+}
+.border3:hover {
+    border-color: black;
+    background-color: #717139;
+}
+.border4:hover {
+    border-color: black;
+    background-color: #C03F2F;
+}
+
+/*hover for iced coffee*/
+.border5:hover {
+    border-color: black;
+    background-color: #9B5F37;
+}
+.border6:hover {
+    border-color: black;
+    background-color: #1A4314;
+}
+.border7:hover {
+    border-color: black;
+    background-color: #2C5E1A;
+}
+.border8:hover {
+    border-color: black;
+    background-color: #904325;
+}
+
+/*hover for package*/
+.border9:hover {
+    border-color: black;
+    background-color: #565455;
+}
+.border10:hover {
+    border-color: black;
+    background-color: #C18F5D;
+}
+.border11:hover {
+    border-color: black;
+    background-color: #A98A64;
+}
+.border12:hover {
+    border-color: black;
+    background-color: #2E2B2C;
+}
+
+/*-----Footer-----*/
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    margin-top: 20px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer-column {
+    max-width: 200px;
+}
+
+.footer-column h4 {
+    font-size: 1.2em;
+    margin-bottom: 15px; 
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0; 
+}
+
+.footer-column ul li {
+    margin: 5px 0;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.3s; 
+}
+.footer-column i {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s; 
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+    color: #d9e7a5; 
+}
+.footer-column i:hover {
+    color: #007bff;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 0.8em;
+    border-top: 1px solid #444; 
+    padding-top: 10px; 
+}

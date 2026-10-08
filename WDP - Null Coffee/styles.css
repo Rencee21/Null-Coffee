@@ -1,0 +1,265 @@
+/*Homepage*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 15px;
+  }
+  button {
+    padding: 20px 30px;
+  }
+}
+/* Header */
+header {
+    background-color: transparent;
+    color: white;
+    padding: 15px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+.navbar h2{
+    display: flex;
+    align-items: center;
+    color: black;
+    margin-right: 1000px;
+}
+.navbar img{
+    display: flex;
+    max-width: 80px;
+    max-height: 80px; 
+    object-fit: cover; 
+    justify-content: center;
+}
+
+.point a{
+    color:black;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.3s;
+    list-style: none;
+    gap: 50px;
+}
+.point:hover{
+    text-decoration: underline;
+    color: lightblue; 
+}
+
+
+
+/*Hero Section*/ 
+.background {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    height: 500px;
+    background-image: url(image/bg.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+   /* border-left: 100px solid white; 
+    border-right: 100px solid white; */
+    padding-left: 50px; 
+    position: relative;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.background .headerhalf1 {
+    max-width: 400px; 
+}
+
+.background h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.background button{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #333;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.hero {
+    display: flex;
+    height: 500px; 
+    padding: 20px;
+    border-left: 100px solid white; 
+    border-right: 100px solid white; 
+    padding-left: 50px; 
+    margin-top: 50px;
+}
+
+
+}
+.hero-left img{
+    background-position: center;
+    background-size: cover; 
+    height: 500px;
+    width: 683px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.hero-right {
+    flex: 1;
+    padding: 20px;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    background-color: #dfeeca;
+}
+
+.hero-right h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-right p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.cta-button a,button{
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.hero2 {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 500px; 
+    background-color: white;
+    padding: 20px;
+    border-left: 100px solid white; 
+    border-right: 100px solid white; 
+    padding-left: 50px; 
+    margin-top: 50px;
+}
+
+
+.hero-left2 img{
+    background-position: center;
+    background-size: contain;
+    height: 500px;
+    width: 683px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.hero-right2 {
+    flex: 1;
+    padding: 20px;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    background-color: lightblue;
+}
+
+.hero-right2 h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-right2 p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+footer{
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    margin-top: 20px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer-column {
+    max-width: 200px;
+}
+
+.footer-column h4 {
+    font-size: 1.2em;
+    margin-bottom: 15px; 
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0; 
+}
+
+.footer-column ul li {
+    margin: 5px 0;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.3s; 
+}
+
+.footer-column i {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s; 
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+    color: #d9e7a5; 
+}
+.footer-column i:hover{
+    color: #007bff;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 0.8em;
+    border-top: 1px solid #444; 
+    padding-top: 10px; 
+}
